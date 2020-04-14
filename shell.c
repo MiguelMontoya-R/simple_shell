@@ -16,11 +16,12 @@ int main(int ac, char **av, char **env)
 	char *cmd[max_args];
 	char *args[max_args];
 
-	(void)ac, (void)env;
+	(void)ac;
 	signal(SIGINT, SIG_IGN);
 	while (1)
 	{
-		printf("#cisfun$ ");
+		if (isatty(STDIN_FILENO))
+			write(STDOUT_FILENO, "#cisfun$ ", 9);
 		read = getline(&line, &len, stdin), i = 0;
 		if (read == -1)
 			printf("\n"), free(line), exit(1);
@@ -42,7 +43,7 @@ int main(int ac, char **av, char **env)
 			if (_strcmp(args[0], "touch") == 0)
 				create_file(args[1], NULL), com = 1;
 			if (com == 0)
-				command(av[0], args);
+				command(av[0], args, env);
 			i++;
 		}
 	}

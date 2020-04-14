@@ -14,7 +14,7 @@ void strtok_args(char *arg, char **args);
 
 void strtok_cmd(char *arg, char **cmd);
 
-void command(char *p, char **args);
+void command(char *p, char **args, char **env);
 
 char *Path_find(char *arg);
 
