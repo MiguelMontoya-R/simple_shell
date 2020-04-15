@@ -24,7 +24,7 @@ void strtok_args(char *arg, char **args)
 		i++;
 	}
 
-	tok = strtok(arg, " \n\t");
+	tok = strtok(arg, " \n\t\v\r\a");
 	i  = 0;
 
 	while (tok != 0)
@@ -32,6 +32,6 @@ void strtok_args(char *arg, char **args)
 		args[i] = tok;
 		i++;
 
-		tok = strtok(0, " \n\t");
+		tok = strtok(0, " \n\t\v\r\a");
 	}
 }

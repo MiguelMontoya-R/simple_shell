@@ -6,15 +6,15 @@
  * @args: args
  * Return: Always 0.
  */
-void cd_function(char **args)
+void cd_function(char **args, char **env)
 {
 	char PWD[200];
 
 	if (args[1])
 	{
-		char *OLDPWD = getenv("OLDPWD");
+		char *OLDPWD = _getenv("OLDPWD", env);
 
-		if (strcmp(args[1], "-") == 0)
+		if (_strcmp(args[1], "-") == 0)
 		{
 			if (chdir(OLDPWD) == 0)
 			{
@@ -51,11 +51,11 @@ short file_exists(char *filename)
  * @arg: xx
  * Return: Always 0.
  */
-char *Path_find(char *arg)
+char *Path_find(char *arg, char **env)
 {
-	char *path = getenv("PATH");
+	char *path = _getenv("PATH", env);
 	char *saveptr;
-	char *tmpstr = malloc(strlen(path) + strlen(arg) + 2);
+	char *tmpstr = malloc(_strlen(path) + _strlen(arg) + 2);
 	char *directory = strtok_r(path, ":", &saveptr);
 	char *slash = "/";
 	short found = 0;
