@@ -21,7 +21,7 @@ int main(int __attribute__((unused)) ac, char **av, char **env)
 		if (read == -1)
 		{
 			if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
-				write(STDOUT_FILENO, "\n", 2);
+				write(STDOUT_FILENO, "\n", 1);
 			free(line), exit(0);
 		}
 		if (_strcmp(line, "\n") == 0)
