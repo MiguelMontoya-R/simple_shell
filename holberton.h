@@ -30,4 +30,16 @@ char *_getenv(char *name, char **environ);
 
 int _strlen(char *s);
 
+void print_env(char **env);
+
+void shell(char *line, char **args, char **av, char **env);
+
+short file_exists(char *filename);
+
+char *find_path(char *arg, char **env);
+
+char *_strcat(char *dest, char *src);
+
+char *_strdup(char *str);
+
 #endif
