@@ -16,10 +16,6 @@ void strtok_cmd(char *arg, char **cmd);
 
 void command(char *p, char **args, char **env);
 
-char *Path_find(char *arg, char **env);
-
-short file_exists(char *filename);
-
 void cd_function(char **args, char **env);
 
 int create_file(const char *filename, char *text_content);

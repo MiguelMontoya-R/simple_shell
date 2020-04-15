@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _strcmp - This function is concate two string
  *
@@ -7,7 +6,6 @@
  * @s2: This second string/array
  * Return: Description of the returned value
  */
-
 int _strcmp(char *s1, char *s2)
 {
 

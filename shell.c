@@ -1,6 +1,4 @@
 #include "holberton.h"
-
-
 /**
  * main - Getline
  * @ac: xx
@@ -8,21 +6,18 @@
  * @env: xx
  * Return: Always 0.
  */
-int main(int ac, char **av, char **env)
+int main(int __attribute__((unused)) ac, char **av, char **env)
 {
-	char *line = NULL;
+	char *line = NULL, *cmd[max_args], *args[max_args];
 	int read = 0, com = 0, i = 0, status = 0;
 	size_t len = 0;
-	char *cmd[max_args];
-	char *args[max_args];
 
-	(void)ac;
 	signal(SIGINT, SIG_IGN);
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
-			write(STDOUT_FILENO, "#cisfun$ ", 9);
-		read = getline(&line, &len, stdin), i = 0;
+			write(STDOUT_FILENO, "#cisfun$ ", 9), i = 0;
+		read = getline(&line, &len, stdin);
 		if (read == -1)
 		{
 			if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)

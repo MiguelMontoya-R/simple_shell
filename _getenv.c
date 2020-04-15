@@ -1,7 +1,9 @@
 #include "holberton.h"
-
 /**
  * _getenv - This function
+ * @name: command to look
+ * @environ: environment var
+ * Return: NULL or the array splitted
  */
 char *_getenv(char *name, char **environ)
 {
