@@ -10,7 +10,7 @@ Clone this repository to get all the files you need to run this basic version of
 
 This project was made and tested using Ubuntu 14.04.3 LTS and compiled with gcc 4.8.4. We strongly encourage you to test this hsh command shell under this conditions.
 
-# Tested commands
+### Tested commands
 
 Commands are a mostly built-in that can be executed within this shell. The commands however have its own way of being executed correctly with given arguments.
 The commands follow this basic prototype: [COMMAND] [ARGUMENTS]
