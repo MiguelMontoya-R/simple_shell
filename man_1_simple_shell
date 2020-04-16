@@ -1,17 +1,35 @@
-.\" Manpage for nuseradd.
-.\" Contact vivek@nixcraft.net.in to correct errors or typos.
-.TH man 8 "06 May 2010" "1.0" "nuseradd man page"
+.\" Manpage for hsh.
+.\" Contact 1485@holbertonschool.com to correct errors or typos.
+.TH HSH 1 "10 April 2020" "1.0" "hsh man page"
 .SH NAME
-hsh (simple shell) - Simple command line interpreter. 
+hsh \- simple command interpreter a.k.a. the SHell. 
 .SH SYNOPSIS
-./hsh -> $ [COMMAND] [ARGUMENTS]
+hsh 
 .SH DESCRIPTION
-
+The shell is a command that reads lines from the terminal window, interprets them, and generally executes other commans. It has basics features that can been run in interactive-mode and in non-interactive-mode, that means you can execute the command shell and you can run other commands inside of it, and when is non-interactive you use from directly your shell and give to our shell version to execute it. 
 .SH OPTIONS
-The nuseradd does not take any options. However, you can supply username.
+It support basic commands as ls, pwd, cd, env, and some others. These commands you can execute within this shell just by typing when it prompts cisfun$ ls, and hit enter and then it shall display the list of the file and directories inside the current working directory. You can use arguments in this shell, that means that you can not only just list the files with ls, you even can use it with arguments like ls -l to list in long format or ls -l -a to list all files including hidden files (that start with a dot .) in long format. This can be used in all commands that receives arguments.
+.PP
+A good example can be this: you type hsh, then it should prompt this cisfun$, then you can type something like cisfun$ ls -l, then you hit enter and it display the files, if you want to get better known of how to use it, try it by yourself.
+.PP
+It supports the following commands:
+.br
+* ls [ARGUMENTS] - list files and diretories within the current directory
+.br
+* cd [DIRECTORY_PATH] - change directory with the absolute path
+.br
+* env - print the environment
+.br
+* pwd - print the current directory's path
+.br
+* exit - exit the hsh shell. Note that it won't exit from your default shell
+.br
 .SH SEE ALSO
-useradd(8), passwd(5), nuseradd.debian(8) 
+sh(1). 
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Vivek Gite (vivek@nixcraft.net.in)
+.br
+Miguel Montoya (1485@holbertonschool.com)
+.br
+Cristian Pineda (cristiand187@hotmail.com)
