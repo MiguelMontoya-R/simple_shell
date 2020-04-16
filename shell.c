@@ -20,15 +20,17 @@ int main(int ac, char **av, char **env)
 	signal(SIGINT, SIG_IGN);
 	while (1)
 	{
-		if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
+		if (isatty(STDIN_FILENO) != 0)
 			write(STDOUT_FILENO, "#cisfun$ ", 9);
 
 		i = 0;
 		read = getline(&line, &len, stdin);
 		if (read == -1)
 		{
-			if (isatty(STDIN_FILENO) != 0 && isatty(STDOUT_FILENO) != 0)
+			if (isatty(STDIN_FILENO) != 0)
+			{
 				write(STDOUT_FILENO, "\n", 1);
+			}
 			free(line);
 			exit(0);
 		}
@@ -39,7 +41,7 @@ int main(int ac, char **av, char **env)
 		{
 			counter++;
 			strtok_args(cmd[i], args);
-			shell(line, args, av, env);
+			shell(line, args, av, env, counter);
 			i++;
 		}
 	}
@@ -53,9 +55,10 @@ int main(int ac, char **av, char **env)
  * @args: Argument this commands
  * @av: Argument vector
  * @env: Enviroment
+ * @counter: Number of commands executed
  * Return: void
  */
-void shell(char *line, char **args, char **av, char **env)
+void shell(char *line, char **args, char **av, char **env, int counter)
 {
 	int com = 0, status = 0;
 
@@ -80,5 +83,5 @@ void shell(char *line, char **args, char **av, char **env)
 	if (_strcmp(args[0], "env") == 0)
 		print_env(env), com = 1;
 	if (com == 0)
-		command(av[0], args, env);
+		command(av[0], args, env, counter);
 }
