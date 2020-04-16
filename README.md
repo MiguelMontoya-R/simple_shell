@@ -27,22 +27,22 @@ List of supported commands:
 ### Examples
 
 cisfun$ ls -la\
-drwxrwxr-x 4 vagrant vagrant  4096 Apr 16 15:44 ._
-drwxrwxr-x 4 vagrant vagrant  4096 Apr 14 22:00 .._
--rwxrwxrwx 1 vagrant vagrant   333 Apr 15 21:14 a.sh_
--rw-rw-r-- 1 vagrant vagrant   490 Apr 14 22:00 _atoi.c_
--rw-rw-r-- 1 vagrant vagrant   296 Apr 15 21:14 AUTHORS_
--rw-rw-r-- 1 vagrant vagrant   404 Apr 15 16:19 cd_function.c_
--rw-rw-r-- 1 vagrant vagrant   673 Apr 16 00:33 _commands.c_
--rw-rw-r-- 1 vagrant vagrant   726 Apr 16 00:33 _find_path.c_
--rw-rw-r-- 1 vagrant vagrant   374 Apr 15 16:22 _getenv.c_
-drwxrwxr-x 8 vagrant vagrant  4096 Apr 16 15:42 .git_
--rw-rw-r-- 1 vagrant vagrant   833 Apr 16 00:33 holberton.h_
--rwxrwxr-x 1 vagrant vagrant 14055 Apr 15 16:38 hsh_
--rw-rw-r-- 1 vagrant vagrant  1986 Apr 16 15:09 man_1_simple_shell_
--rw-rw-r-- 1 vagrant vagrant   482 Apr 15 20:32 path.c_
--rw-rw-r-- 1 vagrant vagrant   249 Apr 16 00:33 _print_env.c_
-cisfun$ exit_
+drwxrwxr-x 4 vagrant vagrant  4096 Apr 16 15:44 .\
+drwxrwxr-x 4 vagrant vagrant  4096 Apr 14 22:00 ..\
+-rwxrwxrwx 1 vagrant vagrant   333 Apr 15 21:14 a.sh\
+-rw-rw-r-- 1 vagrant vagrant   490 Apr 14 22:00 _atoi.c\
+-rw-rw-r-- 1 vagrant vagrant   296 Apr 15 21:14 AUTHORS\
+-rw-rw-r-- 1 vagrant vagrant   404 Apr 15 16:19 cd_function.c\
+-rw-rw-r-- 1 vagrant vagrant   673 Apr 16 00:33 _commands.c\
+-rw-rw-r-- 1 vagrant vagrant   726 Apr 16 00:33 _find_path.c\
+-rw-rw-r-- 1 vagrant vagrant   374 Apr 15 16:22 _getenv.c\
+drwxrwxr-x 8 vagrant vagrant  4096 Apr 16 15:42 .git\
+-rw-rw-r-- 1 vagrant vagrant   833 Apr 16 00:33 holberton.h\
+-rwxrwxr-x 1 vagrant vagrant 14055 Apr 15 16:38 hsh\
+-rw-rw-r-- 1 vagrant vagrant  1986 Apr 16 15:09 man_1_simple_shell\
+-rw-rw-r-- 1 vagrant vagrant   482 Apr 15 20:32 path.c\
+-rw-rw-r-- 1 vagrant vagrant   249 Apr 16 00:33 _print_env.c\
+cisfun$ exit\
 vagrant@vagrant-ubuntu-trusty-64:~/$
 
 ## Return Value
