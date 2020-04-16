@@ -26,7 +26,7 @@ List of supported commands:
 
 ### Examples
 
-cisfun$ ls -la_
+cisfun$ ls -la\
 drwxrwxr-x 4 vagrant vagrant  4096 Apr 16 15:44 ._
 drwxrwxr-x 4 vagrant vagrant  4096 Apr 14 22:00 .._
 -rwxrwxrwx 1 vagrant vagrant   333 Apr 15 21:14 a.sh_
