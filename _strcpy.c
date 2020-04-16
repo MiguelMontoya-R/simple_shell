@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strdup - This function create a arrays
+ * _strdup - This function duplicates an array
  *
  * @str: string for content the arrays
- * Return: arrays or null
+ * Return: pointer to array or null
  */
 
 char *_strdup(char *str)

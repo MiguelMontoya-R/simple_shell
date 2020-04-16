@@ -2,8 +2,8 @@
 
 /**
  * strtok_cmd - PID
- * @arg: The string printer strtok
- * @cmd: cmd
+ * @arg: line buffer from getline
+ * @cmd: pointer to command empty space
  * Return: Nothing.
  */
 void strtok_cmd(char *arg, char **cmd)

@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * _strcmp - This function is concate two string
+ * _strcmp - This function is compare two string
  *
  * @s1: Arrays destination the two string/arrays
  * @s2: This second string/array
- * Return: Description of the returned value
+ * Return: zero if is equal or the number of characters matched
  */
 int _strcmp(char *s1, char *s2)
 {

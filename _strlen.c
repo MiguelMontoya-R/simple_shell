@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strlen - xxx
+ * _strlen - gets the lenght of given string
  *
- * @s: yy
- * Return: Description of the returned value
+ * @s: given string
+ * Return: Return the lenght
  */
 
 

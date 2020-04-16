@@ -2,7 +2,7 @@
 /**
  * command - PID
  * @program: The string printer strtok
- * @args: xx
+ * @args: arguments
  * @env: environment var
  * Return: Nothing.
  */

@@ -5,7 +5,7 @@
  *
  * @dest: Arrays destination the two string/arrays
  * @src: This second string/array
- * Return: Description of the returned value
+ * Return: pointer to concatenated string
  */
 
 char *_strcat(char *dest, char *src)

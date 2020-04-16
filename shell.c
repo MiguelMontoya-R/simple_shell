@@ -10,7 +10,7 @@
 int main(int ac, char **av, char **env)
 {
 	char *line = NULL, *cmd[max_args], *args[max_args];
-	int read = 0, i = 0;
+	int read = 0, i = 0, counter = 0;
 	size_t len = 0;
 
 	(void)ac;
@@ -37,6 +37,7 @@ int main(int ac, char **av, char **env)
 		strtok_cmd(line, cmd);
 		while (cmd[i] != NULL)
 		{
+			counter++;
 			strtok_args(cmd[i], args);
 			shell(line, args, av, env);
 			i++;
@@ -52,7 +53,7 @@ int main(int ac, char **av, char **env)
  * @args: Argument this commands
  * @av: Argument vector
  * @env: Enviroment
- * Return: Always 0.
+ * Return: void
  */
 void shell(char *line, char **args, char **av, char **env)
 {
@@ -80,5 +81,4 @@ void shell(char *line, char **args, char **av, char **env)
 		print_env(env), com = 1;
 	if (com == 0)
 		command(av[0], args, env);
-
 }

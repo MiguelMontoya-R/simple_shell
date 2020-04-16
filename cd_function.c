@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * cd_function - Getline
- * @args: args
+ * cd_function - changes directory
+ * @args: absolute path
  * @env: environment var
  * Return: Always 0.
  */

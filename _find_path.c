@@ -2,7 +2,7 @@
 
 /**
  * file_exists - Getline
- * @filename: xx
+ * @filename: filename a.k.a path
  * Return: Always 0.
  */
 short file_exists(char *filename)
