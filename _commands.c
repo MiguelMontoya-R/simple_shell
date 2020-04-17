@@ -4,6 +4,7 @@
  * @program: The string printer strtok
  * @args: arguments
  * @env: environment var
+ * @counter: Number of commands executed
  * Return: Nothing.
  */
 void command(char *program, char **args, char **env, int counter)
