@@ -15,6 +15,16 @@ void strtok_cmd(char *arg, char **cmd)
 	for (i = 0; i < (max_args); i++)
 		cmd[i] = NULL;
 
+	i = 0;
+
+	while (arg[i] != '\0')
+	{
+		if (arg[i] == '#')
+			arg[i] = '\0';
+
+		i++;
+	}
+
 	tok = strtok(arg, ";");
 	i  = 0;
 
